@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.myvideo.loveweclass"
+    android:versionCode="2"
+    android:versionName="1.2" >
+
+    <uses-sdk android:minSdkVersion="7" />
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+
+        <supports-screens android:smallScreens="true"
+                      android:normalScreens="true"
+                      android:largeScreens="true"
+                      android:xlargeScreens="true"
+		/>
+        <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+        <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" android:name="com.myvideo.loveweclass.IfoodTVApplication">
+        <activity android:name="com.myvideo.loveweclass.SplashActivity"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.myvideo.loveweclass.MainActivity" android:configChanges="keyboardHidden|orientation"></activity>
+        <activity android:name="com.myvideo.loveweclass.HomeGroupActivity" android:configChanges="keyboardHidden|orientation"></activity>
+        <activity android:name="com.myvideo.loveweclass.SearchGroupActivity"></activity>
+        <activity android:name="com.myvideo.loveweclass.FavoriteGroupActivity"></activity>
+        <activity android:name="com.myvideo.loveweclass.DiaryGroupActivity"></activity>
+        <activity android:name="com.myvideo.loveweclass.MoreGroupActivity"></activity>
+        <activity android:name="com.myvideo.loveweclass.HomeActivity" android:configChanges="keyboardHidden|orientation"></activity>
+        <activity android:name="com.myvideo.loveweclass.SearchActivity"></activity>
+        <activity android:name="com.myvideo.loveweclass.FavoriteActivity"></activity>
+        <activity android:name="com.myvideo.loveweclass.DiaryActivity"></activity>
+        <activity android:name="com.myvideo.loveweclass.MoreActivity"></activity>
+        <activity android:name="com.myvideo.loveweclass.ChannelActivity" android:configChanges="keyboardHidden|orientation"></activity>
+        <activity android:name="com.myvideo.loveweclass.ViewVideoActivity"></activity>
+        <activity android:name="com.myvideo.loveweclass.RecipeDetailActivity" android:configChanges="keyboardHidden|orientation"></activity>
+        <activity android:name="com.myvideo.loveweclass.SubCategoryActivity"></activity>
+        <activity android:name="com.myvideo.loveweclass.WebviewActivity"></activity>
+        <activity android:name="com.recipe.ifoodtv.twitter.PostOnTwitterActivity"></activity>
+        <activity android:name="com.myvideo.loveweclass.DiaryListActivity"></activity>
+        <activity android:name="com.myvideo.loveweclass.CameraActivity"></activity>
+        <activity android:name="com.myvideo.loveweclass.DiaryEditActivity"></activity>
+        <activity android:name="com.myvideo.loveweclass.DiaryDetailActivity"></activity>
+        <activity android:name="com.recipe.ifoodtv.twitter.TwitterLogin"></activity>
+        
+    </application>
+
+</manifest>

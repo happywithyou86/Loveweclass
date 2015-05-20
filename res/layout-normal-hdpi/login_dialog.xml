@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="@drawable/login_bg" android:layout_width="match_parent"
+	android:layout_height="wrap_content" android:orientation="vertical">
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:id="@+id/textClose"
+		android:text="Close" android:textColor="#ffffffff"
+		android:layout_marginRight="20dp" android:layout_gravity="top|right"
+		android:textStyle="bold" android:layout_marginTop="30dp"></TextView>
+	<LinearLayout android:id="@+id/linearLayout2"
+		android:layout_width="match_parent" android:orientation="vertical"
+		android:layout_height="0dp" android:layout_weight="1"></LinearLayout>
+	<LinearLayout android:layout_width="match_parent"
+		android:id="@+id/linearLayout1" android:orientation="vertical"
+		android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+		android:layout_height="wrap_content" android:layout_marginBottom="30dp">
+		<EditText android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:id="@+id/editUsername"
+			android:hint="User Name" android:imeOptions="actionNext"
+			android:singleLine="true" android:paddingRight="10dp"
+			android:paddingLeft="10dp" android:layout_marginBottom="15dp"
+			android:paddingBottom="5dp" android:paddingTop="5dp"
+			android:text=""
+			android:background="@drawable/white_one_item_bg" android:textSize="16dp">
+			<requestFocus></requestFocus>
+		</EditText>
+		<EditText android:layout_height="wrap_content"
+			android:layout_width="match_parent" android:id="@+id/editPassword"
+			android:hint="Password" android:imeOptions="actionDone"
+			android:singleLine="true" android:paddingBottom="5dp"
+			android:paddingTop="5dp" android:paddingLeft="10dp"
+			android:inputType="textPassword"
+			android:paddingRight="10dp" android:layout_marginBottom="15dp"
+			android:text=""
+			android:background="@drawable/white_one_item_bg" android:textSize="16dp"></EditText>
+		<Button android:layout_height="wrap_content" android:text="Sign"
+			android:padding="10dp"
+			android:id="@+id/buttonSign" android:layout_width="match_parent"
+			android:background="@drawable/button_selector" android:textColor="@color/brown"
+			android:textStyle="bold" android:textSize="17dp"></Button>
+	</LinearLayout>
+
+</LinearLayout>

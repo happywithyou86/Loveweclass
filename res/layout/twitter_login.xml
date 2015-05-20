@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="46dp"
+        android:background="@drawable/twitter_bar" >
+
+        <Button
+            android:id="@+id/twitter_login_back_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            android:background="@drawable/back_short_selector"
+            android:gravity="center"
+            android:onClick="onBackFunc"
+            android:textColor="#ffffffff"
+            android:text="Back" android:visibility="invisible">
+        </Button>
+
+        <Button
+            android:id="@+id/twitter_sign_in_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/rect_short_selector"
+            android:gravity="center"
+            android:onClick="onSignFunc"
+            android:textColor="#ffffffff"
+            android:text="Sign In" android:visibility="invisible">
+        </Button>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout02"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/RelativeLayout01"
+        android:background="@drawable/twitter_login"
+        android:gravity="center" >
+
+        <TableLayout
+            android:id="@+id/TableLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" >
+
+            <TableRow
+                android:id="@+id/TableRow01"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="5dip" android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Name"
+                    android:textColor="@color/black" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="10dip"
+                    android:layout_height="wrap_content" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/twitter_user_name_edit"
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="5dip"
+                    android:maxLines="1"
+                    android:singleLine="true" >
+                </EditText>
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/TableRow02"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:padding="5dip" android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textColor="@color/black" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/TextView04"
+                    android:layout_width="10dip"
+                    android:layout_height="wrap_content" >
+                </TextView>
+
+                <EditText
+                    android:id="@+id/twitter_password_edit"
+                    android:layout_width="200dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dip"
+                    android:layout_marginTop="5dip"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true" >
+                </EditText>
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
